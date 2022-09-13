@@ -33,11 +33,13 @@ void factorial() {
 		}
 		else {
 			cout << A << "! = ";
-			for (n = 1; n <= A; ++n) {
+			cout << "1";
+			for (n = 2; n <= A; ++n) {
+				cout << " * ";
+				cout << n;
 				factorial *= n;
-				cout << factorial / (n+1) << " * ";
+				
 			}
-			cout << "" << endl;
 			cout << " = " << factorial << endl;
 		}
 	} while (A < 0);
