@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32819.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Hubbard_Lab04", "Hubbard_Lab04\Hubbard_Lab04.vcxproj", "{3FFA8084-0859-4AE8-9321-57D1A8CEB816}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3FFA8084-0859-4AE8-9321-57D1A8CEB816}.Debug|x64.ActiveCfg = Debug|x64
+		{3FFA8084-0859-4AE8-9321-57D1A8CEB816}.Debug|x64.Build.0 = Debug|x64
+		{3FFA8084-0859-4AE8-9321-57D1A8CEB816}.Debug|x86.ActiveCfg = Debug|Win32
+		{3FFA8084-0859-4AE8-9321-57D1A8CEB816}.Debug|x86.Build.0 = Debug|Win32
+		{3FFA8084-0859-4AE8-9321-57D1A8CEB816}.Release|x64.ActiveCfg = Release|x64
+		{3FFA8084-0859-4AE8-9321-57D1A8CEB816}.Release|x64.Build.0 = Release|x64
+		{3FFA8084-0859-4AE8-9321-57D1A8CEB816}.Release|x86.ActiveCfg = Release|Win32
+		{3FFA8084-0859-4AE8-9321-57D1A8CEB816}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A587E5B7-C2F3-4AF0-A8C7-5279D8122ED2}
+	EndGlobalSection
+EndGlobal
