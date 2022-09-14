@@ -23,26 +23,21 @@ void factorial() {
 	cout << "Factorial:" << endl;
 	cout << "Enter a number: ";
 	cin >> A;
-	do {
-		if (A < 0) {
-			cout << "Not a positive number >:( Try again: ";
-			cin >> A;
-		}
-		else if (A == 0) {
-			cout << "0! = 1" << endl;
-		}
-		else {
-			cout << A << "! = ";
-			cout << "1";
-			for (n = 2; n <= A; ++n) {
-				cout << " * ";
-				cout << n;
-				factorial *= n;
-				
-			}
-			cout << " = " << factorial << endl;
-		}
-	} while (A < 0);
+	
+		
+	if (A < 0) {
+		cout << "Not a positive number >:( Try again: ";
+		cin >> A;
+	}
+	cout << A << "! = ";
+	cout << "1";
+	for (n = 2; n <= A; ++n) {
+		cout << " * ";
+		cout << n;
+		factorial *= n;
+
+	}
+	cout << " = " << factorial << endl;
 
 }
 
@@ -51,21 +46,26 @@ void arithmetic() {
 	int adder;
 	int num;
 	int i;
+	int final_starter = 0;
 	cout << "Arithmetic Series:" << endl;
 	cout << "Enter a number to start at: ";
-	cin >> starter >> endl;
+	cin >> starter;
 	cout << "Enter a number to add each time: ";
-	cin >> adder >> endl;
+	cin >> adder;
 	cout << "Enter the number of elements in the series; ";
-	cin >> num >> endl;
+	cin >> num;
 	if (num <= 0) {
 		cout << "Please print a positive number ";
 		cin >> num;
 	}
-	for (i = 1; i <= num; ++adder) {
-		starter += adder;
-		cout << starter;
-	}
+
+		for (i = 1; i <= num; i++) {
+			cout << starter;
+			cout << " + ";
+			starter += adder;
+			final_starter += starter-adder;
+		}
+		cout << " = " << final_starter << endl;
 
 }
 
