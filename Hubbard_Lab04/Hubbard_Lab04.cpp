@@ -47,8 +47,28 @@ void factorial() {
 }
 
 void arithmetic() {
+	int starter;
+	int adder;
+	int num;
+	int i;
+	cout << "Arithmetic Series:" << endl;
+	cout << "Enter a number to start at: ";
+	cin >> starter >> endl;
+	cout << "Enter a number to add each time: ";
+	cin >> adder >> endl;
+	cout << "Enter the number of elements in the series; ";
+	cin >> num >> endl;
+	if (num <= 0) {
+		cout << "Please print a positive number ";
+		cin >> num;
+	}
+	for (i = 1; i <= num; ++adder) {
+		starter += adder;
+		cout << starter;
+	}
 
 }
+
 
 void geometric() {
 
