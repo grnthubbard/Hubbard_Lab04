@@ -2,6 +2,7 @@
 //
 
 #include <iostream>
+#include <cmath>
 
 using namespace std;
 
@@ -52,10 +53,10 @@ void arithmetic() {
 	cin >> starter;
 	cout << "Enter a number to add each time: ";
 	cin >> adder;
-	cout << "Enter the number of elements in the series; ";
+	cout << "Enter the number of elements in the series: ";
 	cin >> num;
 	if (num <= 0) {
-		cout << "Please print a positive number ";
+		cout << "Please print a positive number!: ";
 		cin >> num;
 	}
 
@@ -71,6 +72,34 @@ void arithmetic() {
 
 
 void geometric() {
+	int r;
+	int a;
+	int num;
+	int i;
+	int final = 0;
+	cout << "Geometric Series: " << endl;
+	cout << "Enter a number to start with: ";
+	cin >> r;
+	cout << "Enter a number to multiply by each time: ";
+	cin >> a;
+	cout << "Enter the number of elements: ";
+	cin >> num;
+
+	if (num <= 0) {
+		cout << "Please enter a positive number!: ";
+		cin >> num;
+	}
+
+	for (i = 1; i <= num; i++) {
+
+		cout << r;
+		cout << " + ";
+		
+	
+		r = r * a; 
+		final += r / a;
+	}
+	cout << " = " << final << endl;
 
 }
 
@@ -101,7 +130,7 @@ int main() {
 			geometric();
 		}
 
-		cout << "Run the program again? Type \"Y\" to continue. ";
+		cout << "Run the program again? [Y/N] ";
 		cin >> again;
 
 	} while (again == 'y' || again == 'Y');
