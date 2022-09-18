@@ -2,7 +2,6 @@
 //
 
 #include <iostream>
-#include <cmath>
 
 using namespace std;
 
@@ -27,8 +26,10 @@ void factorial() {
 	
 		
 	if (A < 0) {
-		cout << "Not a positive number >:( Try again: ";
-		cin >> A;
+		do {
+			cout << "Not a positive number >:( Try again: ";
+			cin >> A;
+		} while (A < 0);
 	}
 	cout << A << "! = ";
 	cout << "1";
@@ -56,8 +57,11 @@ void arithmetic() {
 	cout << "Enter the number of elements in the series: ";
 	cin >> num;
 	if (num <= 0) {
-		cout << "Please print a positive number!: ";
-		cin >> num;
+		do {
+
+			cout << "Please print a positive number!: ";
+			cin >> num;
+		} while (num <= 0);
 	}
 
 		for (i = 1; i < num; i++) {
@@ -91,8 +95,10 @@ void geometric() {
 	cin >> num;
 
 	if (num <= 0) {
+		do {
 		cout << "Please enter a positive number!: ";
 		cin >> num;
+		} while (num <= 0);
 	}
 
 
