@@ -10,7 +10,7 @@ void printMenu() {
 	cout << "Choose an operation to perform: " << endl;
 	cout << "\t1. Factorial " << endl;
 	cout << "\t2. Arithemtic " << endl;
-	cout << "\t3. Geometry" << endl;
+	cout << "\t3. Geometric" << endl;
 	cout << "\t4. Exit" << endl;
 	cout << "Your Choice: ";
 }
@@ -60,12 +60,16 @@ void arithmetic() {
 		cin >> num;
 	}
 
-		for (i = 1; i <= num; i++) {
+		for (i = 1; i < num; i++) {
 			cout << starter;
 			cout << " + ";
 			starter += adder;
 			final_starter += starter-adder;
 		}
+
+		cout << starter;
+		starter += adder;
+		final_starter += starter - adder;
 		cout << " = " << final_starter << endl;
 
 }
@@ -77,6 +81,7 @@ void geometric() {
 	int num;
 	int i;
 	int final = 0;
+	int initial = 0;
 	cout << "Geometric Series: " << endl;
 	cout << "Enter a number to start with: ";
 	cin >> r;
@@ -90,15 +95,17 @@ void geometric() {
 		cin >> num;
 	}
 
-	for (i = 1; i <= num; i++) {
 
+	for (i = 1; i < num; i++) {
 		cout << r;
 		cout << " + ";
-		
-	
 		r = r * a; 
 		final += r / a;
 	}
+
+	cout << r;
+	r = r * a;
+	final += r / a;
 	cout << " = " << final << endl;
 
 }
